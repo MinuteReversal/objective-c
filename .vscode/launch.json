@@ -11,7 +11,15 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "MIMode": "lldb",
+      "linux": {
+        "MIMode": "gdb"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "windows": {
+        "MIMode": "gdb"
+      },
       "preLaunchTask": "clang build active file"
     },
     {
@@ -21,11 +29,13 @@
       "program": "${fileDirname}/${fileBasenameNoExtension}.app",
       "args": [],
       "stopAtEntry": false,
+      "stopAtConnect": true,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "clang build active file"
-    },
+      "preLaunchTask": "clang build active file",
+      "showDisplayString": false,
+    }
   ]
 }
