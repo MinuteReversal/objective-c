@@ -16,6 +16,9 @@
 - (void)go {
   NSLog(@"%@ car are go.", self->color);
 }
+- (void)dealloc {
+  [super dealloc];
+}
 @end
 
 /**
