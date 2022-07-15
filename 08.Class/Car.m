@@ -10,7 +10,9 @@
 @implementation Car {
 }
 - init {
-  self->color = @"red";
+  if(self = [super init]){
+    self->color = @"red";
+  }
   return self;
 }
 - (void)go {
